@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>紅魔 11 Pro+ 玻璃後蓋摔壞緊急處理與維修指南 (台灣/雙北專用)</title>
+  <meta name="description" content="針對在京東購入之努比亞紅魔 11 Pro+（氘鋒透明銀翼版）玻璃後蓋碎裂的應急防護、專業拆卸流程工具、雙北信譽維修店家推薦及返廠維修全攻略。">
+  <style>
+    :root {
+      --bg-color: #0b0f19;
+      --card-bg: rgba(20, 26, 43, 0.85);
+      --accent-red: #ff334b;
+      --accent-cyan: #00f0ff;
+      --text-main: #e2e8f0;
+      --text-muted: #94a3b8;
+      --border-color: #2a354f;
+      --glow-red: rgba(255, 51, 75, 0.25);
+      --glow-cyan: rgba(0, 240, 255, 0.2);
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.75;
+      padding: 0 16px 80px;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      padding: 60px 0 40px;
+      position: relative;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 14px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      border: 1px solid var(--accent-cyan);
+      border-radius: 999px;
+      margin-bottom: 16px;
+      box-shadow: 0 0 12px var(--glow-cyan);
+      letter-spacing: 1px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #ffffff 40%, var(--accent-red) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .device-info-bar {
+      margin-top: 24px;
+      padding: 12px 20px;
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 8px;
+      font-size: 0.9rem;
+      border: 1px dashed var(--border-color);
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .device-info-bar span {
+      color: var(--accent-cyan);
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin: 40px 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #ffffff;
+      border-left: 4px solid var(--accent-red);
+      padding-left: 12px;
+    }
+    h3 {
+      font-size: 1.2rem;
+      margin: 24px 0 12px;
+      color: var(--accent-cyan);
+    }
+    p {
+      margin-bottom: 16px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    }
+    .alert {
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      border-left: 5px solid;
+    }
+    .alert-danger {
+      background: rgba(255, 51, 75, 0.1);
+      border-color: var(--accent-red);
+      color: #ff99a8;
+    }
+    .alert-warning {
+      background: rgba(245, 158, 11, 0.1);
+      border-color: #f59e0b;
+      color: #fcd34d;
+    }
+    .alert-tip {
+      background: rgba(0, 240, 255, 0.08);
+      border-color: var(--accent-cyan);
+      color: #a5f3fc;
+    }
+    ul, ol {
+      padding-left: 24px;
+      margin-bottom: 16px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+    th, td {
+      padding: 12px 14px;
+      text-align: left;
+      border: 1px solid var(--border-color);
+    }
+    th {
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--accent-cyan);
+      font-weight: 600;
+    }
+    tr:nth-child(even) {
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .btn {
+      display: inline-block;
+      padding: 8px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .btn-red {
+      background: var(--accent-red);
+      color: #fff;
+      box-shadow: 0 0 15px var(--glow-red);
+    }
+    .btn-red:hover {
+      background: #ff5266;
+      box-shadow: 0 0 20px rgba(255, 51, 75, 0.5);
+    }
+    .btn-outline {
+      border: 1px solid var(--accent-cyan);
+      color: var(--accent-cyan);
+      background: transparent;
+    }
+    .btn-outline:hover {
+      background: var(--accent-cyan);
+      color: #0b0f19;
+    }
+    .video-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .video-card .title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .video-card .creator {
+      font-size: 0.85rem;
+      color: var(--accent-cyan);
+    }
+    .video-card .desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .shop-card {
+      border-top: 3px solid var(--accent-cyan);
+      margin-bottom: 16px;
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+    .shop-title {
+      font-size: 1.15rem;
+      font-weight: bold;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .tag {
+      font-size: 0.75rem;
+      background: rgba(0, 240, 255, 0.15);
+      color: var(--accent-cyan);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: normal;
+    }
+    .highlight {
+      color: var(--accent-red);
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+    a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 640px) {
+      h1 { font-size: 1.6rem; }
+      h2 { font-size: 1.3rem; }
+      .card { padding: 16px; }
+      table { font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <div class="badge">REDMAGIC 11 PRO+ REPAIR GUIDE</div>
+    <h1>努比亞紅魔 11 Pro+ 碎裂後蓋應急與維修全指南</h1>
+    <p class="subtitle">針對從京東購買「氘鋒透明銀翼」陸版旗艦，在台灣不慎摔破後蓋玻璃時的完整搶救與修復方案。</p>
+    
+    <div class="device-info-bar">
+      <div>機型：<span>努比亞 nubia 紅魔 11 Pro+</span></div>
+      <div>規格：<span>24GB RAM + 1TB ROM</span></div>
+      <div>配色：<span>氘鋒透明銀翼</span></div>
+      <div>核心硬體：<span>第五代驍龍 8 至尊版 / 脈動水冷+主動風冷雙散熱</span></div>
+    </div>
+  </header>
+
+  <!-- 第一部分：第一時間應急處理 -->
+  <div class="card">
+    <h2>1. 剛摔破後蓋？第一時間「黃金 5 步」安全處理</h2>
+    
+    <div class="alert alert-danger">
+      <strong>⚠️ 紅魔 11 Pro+ 透明版的特殊致命危險：</strong><br>
+      紅魔 11 Pro+ 內建高達 <strong>24,000 RPM 主動散熱渦輪風扇</strong> 與 <strong>AquaCore 脈動微泵水冷循環管</strong>。透明背板若破碎，微小玻璃渣極易被吸入風道卡死風扇軸承，或刺穿脆弱的超薄微循環水冷管造成冷卻液洩漏燒板！
+    </div>
+
+    <ol>
+      <li>
+        <strong>立即貼上寬版透明膠帶（封閉碎屑）：</strong><br>
+        用一般文具透明封箱膠帶，完整順平貼附在碎裂的背板上。這不僅能防止細小玻璃碎渣掉落割傷手指，更關鍵的是**阻止碎玻璃顆粒掉進內部風道和機芯**。
+      </li>
+      <li>
+        <strong>關閉散熱風扇或立即關機：</strong><br>
+        若手機仍能操作，請立即下滑控制中心，<strong>關閉散熱風扇開關</strong>，並至遊戲空間（魔姬中心）停用自動啟動風扇功能；若無即刻使用需求，<strong>建議直接長按關機</strong>，防止水冷微泵與風扇震動運轉帶動碎屑位移。
+      </li>
+      <li>
+        <strong>嚴禁接觸任何水氣與液體：</strong><br>
+        原廠標榜的防護等級在玻璃破裂後<strong>已完全失效</strong>！請遠離浴室、雨水及飲料，切勿用水沖洗玻璃殘渣。
+      </li>
+      <li>
+        <strong>保護鏡頭光學鏡片：</strong><br>
+        紅魔 11 Pro+ 採用一體化純平背板設計。檢查相機鏡頭上方的保護玻璃是否一同破裂，避免手指按壓造成感光元件或 OIS 馬達受損。
+      </li>
+      <li>
+        <strong>套上厚保護殼暫時收納：</strong><br>
+        在找到維修方案前，請裝上包裹性較好的防摔保護殼，避免手機在口袋或背包中因擠壓使裂痕擴大。
+      </li>
+    </ol>
+  </div>
+
+  <!-- 第二部分：拆卸方式與工具分析 -->
+  <div class="card">
+    <h2>2. 拆卸紅魔 11 Pro+ 後蓋的流程與必備工具</h2>
+    <p>電競手機結構遠比一般直板機複雜，紅魔 11 Pro+ 的後蓋不僅有強力封膠，更與 RGB 燈效排線、風扇散熱風道緊密貼合。</p>
+
+    <h3>🛠️ 必備專業拆解工具清單</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>工具項目</th>
+          <th>建議規格 / 類型</th>
+          <th>用途說明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>恆溫加熱台 / 熱風槍</strong></td>
+          <td>設定 80°C - 85°C（熱風槍請調小風量）</td>
+          <td>軟化原廠防水背膠。溫度嚴禁超過 90°C，以免損壞電池與水冷膠管</td>
+        </tr>
+        <tr>
+          <td><strong>超薄拆機金屬片 / 塑料翹片</strong></td>
+          <td>0.08mm 極薄鋼片 (如開屏片) + 塑料撥片</td>
+          <td>金屬片僅用於劃開第一道微縫，後續必須全用塑料薄片滑動</td>
+        </tr>
+        <tr>
+          <td><strong>重型強力吸盤</strong></td>
+          <td>雙手柄吸盤或帶拉環工業吸盤</td>
+          <td>吸附於後蓋平整處施加垂直拉力，拉出入刀縫隙</td>
+        </tr>
+        <tr>
+          <td><strong>無水酒精 (IPA 99.7%)</strong></td>
+          <td>高純度異丙醇配細針筒</td>
+          <td>微量滴注於塑料撬片邊緣溶解殘膠（<strong>切勿大量噴灑滲入鏡頭與風道</strong>）</td>
+        </tr>
+        <tr>
+          <td><strong>ESD 防靜電手套與護目鏡</strong></td>
+          <td>無塵防靜電橡膠指套 / 護目鏡</td>
+          <td>防止碎玻璃在受力崩解時飛濺入眼，防止人體靜電擊穿主板</td>
+        </tr>
+        <tr>
+          <td><strong>原廠預裁後蓋膠 / B-7000 膠水</strong></td>
+          <td>專用成型易拉防水雙面膠貼</td>
+          <td>重新裝配後蓋時封膠，確保牢固與氣密性</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>⚠️ 拆解步驟與核心注意事項</h3>
+    <ol>
+      <li><strong>加熱背板：</strong>將手機屏幕朝下放置於加熱台（80°C 加熱 3~5 分鐘），或用熱風槍沿背板四周勻速加熱。</li>
+      <li><strong>吸盤拉縫：</strong>在背蓋下半部較完整處吸上吸盤，向上緩慢發力拉出 0.5mm 微縫。</li>
+      <li><strong>切入膠層：</strong>插入 0.08mm 拆機片割開膠條，立即換入塑料翹片。<strong>撬片插入深度嚴禁超過 3mm</strong>！</li>
+      <li><strong>避開排線與風扇：</strong>
+        <ul>
+          <li>背蓋上方有相機鏡頭飾蓋與 RGB 炫彩燈帶連接排線。</li>
+          <li>透明版右側為風道出風口濾網結構，不可盲目橫向切入。</li>
+        </ul>
+      </li>
+      <li><strong>清理中框殘膠：</strong>後蓋掀開後，先使用鑷子小心夾出所有碎玻璃渣，再用除膠劑將中框槽內的殘膠徹底清理乾淨。</li>
+    </ol>
+  </div>
+
+  <!-- 第三部分：專業級拆解影片推薦 -->
+  <div class="card">
+    <h2>3. 專業級拆解影片連結與學習資源</h2>
+    <p>在動手或送修前，強烈建議觀看以下頂尖數碼博主的結構解析與拆機影片，了解內部極致堆疊：</p>
+
+    <div class="video-card">
+      <div class="title">【微機分 WekiHome】紅魔 11 PRO+ 深度拆解：PC級水冷+風冷散熱終結者？</div>
+      <div class="creator">知名拆解評測頻道：微機分 WekiHome (享拆)</div>
+      <div class="desc">業界最權威的高清拆解。詳細剖析了紅魔 11 Pro+ 的後蓋揭開技巧、AquaCore 脈動微泵水冷系統、主動風扇佈局以及超薄元件排布。</div>
+      <div>
+        <a href="https://www.bilibili.com/video/BV1c1421h7Y2/" target="_blank" class="btn btn-red">📺 前往 Bilibili 觀看</a>
+        <a href="https://www.youtube.com/watch?v=Hv9amjw3uhs" target="_blank" class="btn btn-outline" style="margin-left: 8px;">▶️ 前往 YouTube 觀看</a>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="title">【世紀威鋒波哥】紅魔 11 / 10 系列電競手機現場換蓋與屏幕維修實錄</div>
+      <div class="creator">資深手機硬體工程師：世紀威鋒</div>
+      <div class="desc">針對碎玻璃背板更換的實務維修視頻。展示了如何無損清除碎玻璃、清理中框金屬殘渣以及正確黏合新背板的技巧。</div>
+      <div>
+        <a href="https://search.bilibili.com/all?keyword=%E7%B4%85%E9%AD%9411+Pro+%E6%8B%86%E8%A7%A3" target="_blank" class="btn btn-outline">🔍 在 Bilibili 檢索波哥實操系列</a>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="title">【iFixit & 數碼海外精選】RedMagic 11 Pro Teardown & Repairability Assessment</div>
+      <div class="creator">iFixit / 海外知名硬體頻道</div>
+      <div class="desc">評估內部水冷迴路與電競模組的可維修度評分（3/10），特別警示了電池防爆拆解及易受損的感應排線位置。</div>
+      <div>
+        <a href="https://www.youtube.com/results?search_query=Red+Magic+11+Pro+teardown" target="_blank" class="btn btn-outline">▶️ 在 YouTube 搜尋 RedMagic 拆解</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 第四部分：雙北維修店家評估推薦 -->
+  <div class="card">
+    <h2>4. 台北市 & 新北市信譽良好之手機維修店家推薦</h2>
+    <div class="alert alert-tip">
+      <strong>💡 台灣維修「陸版冷門旗艦」的先決概念：</strong><br>
+      紅魔系列在台灣無官方授權實體維修站，一般街邊小通訊行幾乎不可能備有「紅魔 11 Pro+ 氘鋒透明銀翼」的後蓋零件！<br>
+      <strong>最佳解法：</strong>建議先自行在京東或淘寶訂購<strong>「紅魔 11 Pro+ 氘鋒透明銀翼 原裝後蓋總成（含鏡片排線）」</strong>寄至台灣，再找下列技術過硬的雙北店家支付 <strong>代工費（約 NT$ 500 ~ 1,000 元）</strong> 進行現場更換。
+    </div>
+
+    <div class="shop-card">
+      <div class="shop-title">
+        <span>1. 修匠 3C（專業疑難雜症修復）</span>
+        <span class="tag">大安東區 / 永和門市</span>
+      </div>
+      <p style="margin-top: 8px; color: var(--text-muted);">
+        <strong>擅長領域：</strong>專精各品牌安卓旗艦機、折疊屏、主機板飛線修復及水貨零件更換。<br>
+        <strong>特色優勢：</strong>工程師維修底子深厚，不排斥處理特殊小眾機型，接受自備料件現場代工，施工細膩。<br>
+        <strong>服務據點：</strong>台北市大安區忠孝東路 / 新北市永和區
+      </p>
+    </div>
+
+    <div class="shop-card">
+      <div class="shop-title">
+        <span>2. 盛裕手機現場維修中心</span>
+        <span class="tag">新北板橋</span>
+      </div>
+      <p style="margin-top: 8px; color: var(--text-muted);">
+        <strong>擅長領域：</strong>雙北地區深耕多年的安卓老牌名店，黑鯊、ROG、紅魔等電競手機皆有維修經驗。<br>
+        <strong>特色優勢：</strong>透明公開的面對面現場拆機，對於水冷管與風扇等精密部件能提供安全無損的拆卸保證。<br>
+        <strong>服務據點：</strong>新北市板橋區
+      </p>
+    </div>
+
+    <div class="shop-card">
+      <div class="shop-title">
+        <span>3. 大師修 SHIFU 專業維修中心</span>
+        <span class="tag">台北三創園區 / 板橋大遠百 / 環球購物中心</span>
+      </div>
+      <p style="margin-top: 8px; color: var(--text-muted);">
+        <strong>擅長領域：</strong>百貨專櫃級連鎖維修，設備達到原廠標準無塵除靜電環境。<br>
+        <strong>特色優勢：</strong>三創門市具備高端旗艦機維修設備。建議送修前加入官方 LINE 拍照確認是否受理紅魔 11 Pro+ 背蓋代工。<br>
+        <strong>服務據點：</strong>台北市市民大道三創生活園區 8F / 新北各大百貨
+      </p>
+    </div>
+
+    <div class="shop-card">
+      <div class="shop-title">
+        <span>4. 947 修手機（全台連鎖體系）</span>
+        <span class="tag">台北中山 / 忠孝 / 新北三重 / 板橋多門市</span>
+      </div>
+      <p style="margin-top: 8px; color: var(--text-muted);">
+        <strong>擅長領域：</strong>非官方機型與水貨機的後勤維修大本營。<br>
+        <strong>特色優勢：</strong>料件調度網絡廣，若不願自行由對岸淘料，可詢問店家是否能協助跨境調取透明版後蓋配件。<br>
+        <strong>服務據點：</strong>雙北各精華生活圈均有分店
+      </p>
+    </div>
+
+    <div class="shop-card">
+      <div class="shop-title">
+        <span>5. 神機 Miracle 專業現場維修</span>
+        <span class="tag">台北中山區</span>
+      </div>
+      <p style="margin-top: 8px; color: var(--text-muted);">
+        <strong>擅長領域：</strong>主打 30~60 分鐘快速拆換、防水膠條重新高溫壓合。<br>
+        <strong>特色優勢：</strong>Google 評價極高，可預約現場維修，親眼確認換裝過程不被換件或損壞內部水冷裝置。<br>
+        <strong>服務據點：</strong>台北市中山區吉林路 / 民權東路周邊
+      </p>
+    </div>
+  </div>
+
+  <!-- 第五部分：三大維修途徑優缺點比較 -->
+  <div class="card">
+    <h2>5. 維修途徑綜合對比與最佳決策</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>維修途徑</th>
+          <th>耗費時間</th>
+          <th>預估花費 (TWD)</th>
+          <th>優點</th>
+          <th>風險與缺點</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>方案 A：淘寶/京東買原蓋 + 雙北店家代工 (推薦)</strong></td>
+          <td>約 4~7 天 (等零件空運)</td>
+          <td>後蓋約 $800~1,500 + 代工費 $600~1,000 ≈ <strong>$1,400 ~ $2,500</strong></td>
+          <td>保證原裝外觀（透明銀翼版細節無色差），現場 30 分鐘搞定不留機</td>
+          <td>需自行下單料件，若買到副廠高仿可能透光度差</td>
+        </tr>
+        <tr>
+          <td><strong>方案 B：順豐快遞寄回中國官方售後維修</strong></td>
+          <td>約 2~3 週</td>
+          <td>官方後蓋約 ¥280~380 + 雙向運費與稅費 ≈ <strong>$2,200 ~ $3,200</strong></td>
+          <td>100% 原廠密閉防水製程，保留原廠一年聯保資格</td>
+          <td>含鋰電池寄送海關通關手續繁複（常需特貨申報），耗時漫長</td>
+        </tr>
+        <tr>
+          <td><strong>方案 C：全交由雙北維修店全包代尋代換</strong></td>
+          <td>約 7~10 天</td>
+          <td>連工帶料約 <strong>$2,500 ~ $3,800</strong></td>
+          <td>完全免操心，有維修店提供 3 個月保固</td>
+          <td>報價較高，有些店家可能用副廠玻璃後蓋充當原裝</td>
+        </tr>
+        <tr>
+          <td><strong>方案 D：自己 DIY 拆解更換</strong></td>
+          <td>約 4~7 天</td>
+          <td>配件加工具約 <strong>$1,000 ~ $1,600</strong></td>
+          <td>成本最低，享受 DIY 樂趣</td>
+          <td><span class="highlight">極高風險！</span>易割裂排線、戳破水冷循環管或導致風扇進灰卡死</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 第六部分：給機主的防坑避雷 Checklist -->
+  <div class="card">
+    <h2>6. 最終維修叮嚀與避坑清單 (Checklist)</h2>
+    <ul>
+      <li>[ ] <strong>確認後蓋版本：</strong>紅魔 11 Pro+ 氘鋒透明銀翼版（Silver Wing）其背蓋內部有特殊透明鍍膜塗層與風道視窗，千萬不要買成暗夜騎士或普通黑白版。</li>
+      <li>[ ] <strong>購料時確認含「攝像頭保護鏡片」：</strong>盡量購買「帶鏡頭鏡片與排線總成」的後蓋，否則需從舊碎蓋拆卸舊鏡片移植，極易沾染指紋或漏光。</li>
+      <li>[ ] <strong>先備份手機資料：</strong>即使只更換後蓋，拆機前也請務必備份好手機內微信、照片、遊戲帳號與重要資料。</li>
+      <li>[ ] <strong>電話預約再出發：</strong>出發前往雙北店家前，請先透過 LINE 或電話確認：「老闆，我有支陸版紅魔 11 Pro+ 碎後蓋，自備原裝料件，請問現場代工更換費用多少？可現場等待嗎？」</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>© 2026 紅魔電競手機台灣用戶維護指南 | 開源整理自 Bilibili / YouTube / 雙北 3C 維修實務反饋</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
